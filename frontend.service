@@ -1,0 +1,12 @@
+[Unit]
+Description=PhishShield Frontend
+After=pyserver.service
+
+[Service]
+User=vagrant
+ExecStart=npm --prefix /home/vagrant/PhishShield/react-app/ run dev -- --host 0.0.0.0
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

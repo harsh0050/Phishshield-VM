@@ -1,0 +1,12 @@
+[Unit]
+Description=PhishShield Python Backend API Server
+After=mongod.service
+
+[Service]
+User=vagrant
+ExecStart=/home/vagrant/PhishShield/launch-pyserver.sh
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
