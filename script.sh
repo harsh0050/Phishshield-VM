@@ -33,6 +33,7 @@ sudo apt-get install python3-venv -y
 sudo python3 -m venv myenv
 source myenv/bin/activate
 pip install -r requirements.txt
+python3 init_database.py
 # nohup python3 main.py &> python-logs.txt &
 
 cd ../react-app
